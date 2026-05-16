@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "e09588bfee207785",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed38f02c574269c5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2ff7bb27480d6668",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LLM-wiki/Costruire la Base di Conoscenze LLM di Andrej Karpathy.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Costruire la Base di Conoscenze LLM di Andrej Karpathy"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f08e76c33c5183cd",
+    "type": "split",
+    "children": [
+      {
+        "id": "8bf8666a13bfefd3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ae6f7f738d4b8f6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "7518d6aafec220bb",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f57ac150a9b019fb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "48e52cffd8793709",
+    "type": "split",
+    "children": [
+      {
+        "id": "46927a385c1dea15",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0211f7a1fe6b5ad4",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "62966f09f7ca5c95",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "808e1e62b68c3ed5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f6973def18c8e5d8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "77ffc72aeaeb42ba",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "2ff7bb27480d6668",
+  "lastOpenFiles": [
+    "LLM-wiki/Perché i sistemi di gestione della conoscenza stanno adottando modelli basati su grafi.md",
+    "LLM-wiki/Gestione della conoscenza personale basata su grafi AI.md",
+    "LLM-wiki/Prima di costruire il tuo sistema personale di gestione della conoscenza.md",
+    "LLM-wiki/Costruire la Base di Conoscenze LLM di Andrej Karpathy.md",
+    "LLM-wiki/Database Notion vs Database a Grafi Strutturare la conoscenza accademica.md",
+    "LLM-wiki/Gestione Della Conoscenza Personale.md",
+    "Theo James.md",
+    "Untitled.canvas",
+    "LLM-wiki/Before You Build Your Personal Knowledge Management System.md",
+    "LLM-wiki/Gestione Della Conoscenza.md",
+    "Untitled/Untitled.md",
+    "LLM-wiki",
+    "Welcome.md"
+  ]
+}
