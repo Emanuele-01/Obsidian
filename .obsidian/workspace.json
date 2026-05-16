@@ -4,22 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ed38f02c574269c5",
+        "id": "fc66d2cc18a3288a",
         "type": "tabs",
         "children": [
           {
-            "id": "2ff7bb27480d6668",
+            "id": "587d650791c6bbe7",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": "HEAD",
-                "bRef": ""
+                "file": "Sicurezza/Come Generare Chiavi SSH.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Index)"
+              "icon": "lucide-file",
+              "title": "Come Generare Chiavi SSH"
             }
           }
         ]
@@ -192,8 +191,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2ff7bb27480d6668",
+  "active": "587d650791c6bbe7",
   "lastOpenFiles": [
+    "Sicurezza/Come Generare Chiavi SSH per GitHub.md",
+    "Sicurezza/Come Generare Chiavi SSH.md",
+    "Sicurezza",
     "LLM-wiki/Costruire la Base di Conoscenze LLM di Andrej Karpathy.md",
     "LLM-wiki/Perché i sistemi di gestione della conoscenza stanno adottando modelli basati su grafi.md",
     "LLM-wiki/Gestione della conoscenza personale basata su grafi AI.md",
