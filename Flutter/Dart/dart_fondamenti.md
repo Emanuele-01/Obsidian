@@ -1,6 +1,6 @@
 # 🎯 Fondamenti di Dart
 
-[← Torna all'Hub](./index.md) | [Continua con la Guida ai Widget →](./widget_principali.md)
+[← Torna all'Hub](../index.md) | [Continua con la Guida ai Widget →](../Widgets/widget_principali.md)
 
 ---
 
@@ -30,7 +30,7 @@ In Dart, tutto ciò che può essere inserito in una variabile è un *oggetto*. D
     ```
 *   `const`: Definisce una costante a tempo di compilazione (compile-time constant).
     > [!TIP]
-    > L'uso costante di `const` è fondamentale anche in Flutter per ottimizzare la UI. Leggi come influisce sulle performance nella sezione [Ottimizzazione delle Prestazioni](./sviluppo_ios_android.md#5-ottimizzazione-delle-prestazioni).
+    > L'uso costante di `const` è fondamentale anche in Flutter per ottimizzare la UI. Leggi come influisce sulle performance nella sezione [Ottimizzazione delle Prestazioni](../Theory/sviluppo_ios_android.md#5-ottimizzazione-delle-prestazioni).
     ```dart
     const pi = 3.14159; // Valore noto a priori
     ```
@@ -119,7 +119,7 @@ String saluta(String nome, [String? titolo]) {
 ```
 
 #### 2. Parametri Nominati (Named Parameters)
-Racchiusi tra parentesi graffe `{}`. Aumentano notevolmente la leggibilità e sono ampiamente utilizzati per definire le proprietà dei widget Flutter (vedi [Guida ai Widget](./widget_principali.md)).
+Racchiusi tra parentesi graffe `{}`. Aumentano notevolmente la leggibilità e sono ampiamente utilizzati per definire le proprietà dei widget Flutter (vedi [Guida ai Widget](../Widgets/widget_principali.md)).
 ```dart
 void creaUtente({required String nome, int eta = 18}) {
   print('Utente: $nome, Età: $eta');
@@ -133,7 +133,7 @@ creaUtente(nome: 'Alice', eta: 30);
 
 ## 4. Programmazione Orientata agli Oggetti (OOP)
 
-Dart è un linguaggio basato su classi e mixin. Ogni widget di Flutter è in realtà una classe Dart (leggi di più su [Stateless vs Stateful](./widget_principali.md#1-statelesswidget-vs-statefulwidget)).
+Dart è un linguaggio basato su classi e mixin. Ogni widget di Flutter è in realtà una classe Dart (leggi di più su [Stateless vs Stateful](../Widgets/widget_principali.md#1-statelesswidget-vs-statefulwidget)).
 
 > [!TIP]
 > Questa sezione tratta i concetti base della programmazione ad oggetti. Per un'analisi approfondita sui membri privati, visibilità, getter/setter e costruttori factory, consulta la guida completa: **[OOP in Dart](./dart_oop.md)**.
@@ -187,7 +187,7 @@ class Uccello with Volante {}
 
 ## 5. Programmazione Asincrona
 
-La programmazione asincrona in Dart si basa su due concetti chiave: `Future` (operazioni singole) e `Stream` (flussi di dati nel tempo). Questa logica è fondamentale per caricare dati da API o per implementare la [Gestione dello Stato](./sviluppo_ios_android.md#1-architettura-e-gestione-dello-stato-state-management).
+La programmazione asincrona in Dart si basa su due concetti chiave: `Future` (operazioni singole) e `Stream` (flussi di dati nel tempo). Questa logica è fondamentale per caricare dati da API o per implementare la [Gestione dello Stato](../Theory/sviluppo_ios_android.md#1-architettura-e-gestione-dello-stato-state-management).
 
 ### Future e Async/Await
 Un `Future` rappresenta un valore che sarà disponibile in futuro (es. chiamata API).
@@ -224,4 +224,4 @@ Stream<int> conteggioAsincrono(int max) async* {
 
 ---
 
-[← Torna all'Hub](./index.md) | [Continua con la Guida ai Widget →](./widget_principali.md)
+[← Torna all'Hub](../index.md) | [Continua con la Guida ai Widget →](../Widgets/widget_principali.md)

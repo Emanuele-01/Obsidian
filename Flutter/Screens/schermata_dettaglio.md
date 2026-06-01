@@ -1,6 +1,6 @@
 # 🛍️ Schermata di Dettaglio
 
-[← Torna alla Schermata Home](./schermata_home.md) | [Torna all'Hub](./index.md)
+[← Torna alla Schermata Home](./schermata_home.md) | [Torna all'Hub](../index.md)
 
 ---
 
@@ -234,4 +234,4 @@ class _DetailScreenState extends State<DetailScreen> {
 
 ---
 
-[← Torna alla Schermata Home](./schermata_home.md) | [Torna all'Hub](./index.md)
+[← Torna alla Schermata Home](./schermata_home.md) | [Torna all'Hub](../index.md)

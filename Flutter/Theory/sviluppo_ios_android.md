@@ -1,6 +1,6 @@
 # 📱 Tecniche di Sviluppo per iOS e Android in Flutter
 
-[← Guida ai Widget](./widget_principali.md) | [Torna all'Hub](./index.md)
+[← Guida ai Widget](../Widgets/widget_principali.md) | [Torna all'Hub](../index.md)
 
 ---
 
@@ -10,11 +10,11 @@ Flutter consente di compilare applicazioni nativamente per iOS e Android a parti
 
 ## 1. Architettura e Gestione dello Stato (State Management)
 
-La gestione dello stato è cruciale per separare la logica di business dall'interfaccia utente (UI) e garantire la manutenibilità e testabilità dell'app. Un'architettura solida evita l'abuso del metodo `setState()` nei widget complessi (leggi i rischi in [StatefulWidget](./widget_principali.md#1-statelesswidget-vs-statefulwidget)).
+La gestione dello stato è cruciale per separare la logica di business dall'interfaccia utente (UI) e garantire la manutenibilità e testabilità dell'app. Un'architettura solida evita l'abuso del metodo `setState()` nei widget complessi (leggi i rischi in [StatefulWidget](../Widgets/widget_principali.md#1-statelesswidget-vs-statefulwidget)).
 
 ### I Pattern di State Management più Diffusi
 1.  **Riverpod:** Evoluzione del pattern Provider. È fortemente tipizzato, compile-safe e non dipende dall'albero dei widget per accedere ai dati.
-2.  **BLoC (Business Logic Component):** Basato su flussi di dati (`Stream`). È la scelta ideale per applicazioni di grandi dimensioni. Trovi dettagli sul funzionamento degli stream nella sezione [Stream in Dart](./dart_fondamenti.md#streams).
+2.  **BLoC (Business Logic Component):** Basato su flussi di dati (`Stream`). È la scelta ideale per applicazioni di grandi dimensioni. Trovi dettagli sul funzionamento degli stream nella sezione [Stream in Dart](../Dart/dart_fondamenti.md#streams).
 3.  **Provider:** Il pattern raccomandato storicamente dal team di Flutter per progetti di dimensioni medio-piccole. Sfrutta l'albero dei widget e `InheritedWidget`.
 
 ### Struttura delle Cartelle Consigliata (Feature-First)
@@ -68,7 +68,7 @@ L'applicazione mostra elementi grafici diversi a seconda del sistema operativo.
 Le app devono adattarsi a una vasta gamma di schermi (smartphone compatti, tablet, schermi pieghevoli).
 
 *   **`MediaQuery`:** Consente di ottenere le dimensioni esatte dello schermo (`context.size.width`) per calcolare layout percentuali.
-*   **`LayoutBuilder`:** Fornisce i vincoli di dimensione del widget padre anziché dell'intero schermo. Ottimo per creare componenti flessibili (leggi anche [Spaziamento e Allineamento](./widget_principali.md#3-widget-di-spaziamento-e-allineamento)).
+*   **`LayoutBuilder`:** Fornisce i vincoli di dimensione del widget padre anziché dell'intero schermo. Ottimo per creare componenti flessibili (leggi anche [Spaziamento e Allineamento](../Widgets/widget_principali.md#3-widget-di-spaziamento-e-allineamento)).
 *   **`AspectRatio` / `FractionallySizedBox`:** Consentono di mantenere proporzioni precise indipendentemente dalla densità di pixel dello schermo.
 
 ---
@@ -85,7 +85,7 @@ sequenceDiagram
     MethodChannel -->> Flutter UI (Dart): Riceve Risultato
 ```
 
-Questa comunicazione è nativamente asincrona. Per capire come Dart gestisce le risposte nel tempo, fai riferimento a [Programmazione Asincrona](./dart_fondamenti.md#5-programmazione-asincrona).
+Questa comunicazione è nativamente asincrona. Per capire come Dart gestisce le risposte nel tempo, fai riferimento a [Programmazione Asincrona](../Dart/dart_fondamenti.md#5-programmazione-asincrona).
 
 ### Esempio Dart:
 ```dart
@@ -107,9 +107,9 @@ Future<void> getBatteryLevel() async {
 
 Flutter è veloce per sua natura grazie al motore grafico (Skia o il nuovo Impeller), ma una cattiva implementazione può causare lag (jank).
 
-*   **Uso di `const`:** Usare sempre costruttori `const` quando possibile. Aiuta il framework a saltare la ricostruzione di widget immutabili (leggi la definizione di `const` in [Costanti in Dart](./dart_fondamenti.md#costanti-final-e-const)).
+*   **Uso di `const`:** Usare sempre costruttori `const` quando possibile. Aiuta il framework a saltare la ricostruzione di widget immutabili (leggi la definizione di `const` in [Costanti in Dart](../Dart/dart_fondamenti.md#costanti-final-e-const)).
 *   **Ridurre l'uso di `setState`:** Chiamare `setState` solo a livello locale e isolare i widget che cambiano spesso stato per evitare di ricostruire l'intero albero della UI.
-*   **ListView Performanti:** Utilizzare sempre `ListView.builder` anziché il costruttore standard `ListView` per liste lunghe (vedi dettagli in [ListView.builder](./widget_principali.md#5-widget-per-liste-e-scorrimento)).
+*   **ListView Performanti:** Utilizzare sempre `ListView.builder` anziché il costruttore standard `ListView` per liste lunghe (vedi dettagli in [ListView.builder](../Widgets/widget_principali.md#5-widget-per-liste-e-scorrimento)).
 *   **Ottimizzazione Immagini:** Utilizzare `cacheWidth` e `cacheHeight` in `Image.asset` o `Image.network` per evitare di caricare in memoria immagini a risoluzione inutilmente alta.
 *   **Evitare il "Deep Nesting" eccessivo:** Suddividere i widget complessi in sotto-widget separati (refactoring in classi esterne, non in metodi helper).
 
@@ -131,4 +131,4 @@ Flutter è veloce per sua natura grazie al motore grafico (Skia o il nuovo Impel
 
 ---
 
-[← Guida ai Widget](./widget_principali.md) | [Torna all'Hub](./index.md)
+[← Guida ai Widget](../Widgets/widget_principali.md) | [Torna all'Hub](../index.md)

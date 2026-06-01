@@ -1,6 +1,6 @@
 # 🔐 Schermata di Login
 
-[← Torna all'Hub](./index.md) | [Continua con la Schermata Home →](./schermata_home.md)
+[← Torna all'Hub](../index.md) | [Continua con la Schermata Home →](./schermata_home.md)
 
 ---
 
@@ -11,10 +11,10 @@ La schermata di login è fondamentale per quasi ogni applicazione. In questa gui
 ## 1. Architettura ed Elementi Chiave
 
 Per realizzare un login interattivo con validazione, abbiamo bisogno di:
-1.  Un **`StatefulWidget`** per tracciare lo stato (se l'utente ha cliccato sul pulsante, se stiamo caricando, ecc.). Approfondisci la struttura in [StatefulWidget](./widget_principali.md#1-statelesswidget-vs-statefulwidget).
+1.  Un **`StatefulWidget`** per tracciare lo stato (se l'utente ha cliccato sul pulsante, se stiamo caricando, ecc.). Approfondisci la struttura in [StatefulWidget](../Widgets/widget_principali.md#1-statelesswidget-vs-statefulwidget).
 2.  Una **`GlobalKey<FormState>`** per identificare univocamente il form e validare i campi in blocco.
 3.  Dei **`TextEditingController`** per leggere il testo digitato dall'utente.
-4.  L'asincronia per simulare una richiesta API ad un server (vedi [Future e Async/Await](./dart_fondamenti.md#future-e-asyncawait)).
+4.  L'asincronia per simulare una richiesta API ad un server (vedi [Future e Async/Await](../Dart/dart_fondamenti.md#future-e-asyncawait)).
 
 ---
 
@@ -214,4 +214,4 @@ class _LoginScreenState extends State<LoginScreen> {
 
 ---
 
-[← Torna all'Hub](./index.md) | [Continua con la Schermata Home →](./schermata_home.md)
+[← Torna all'Hub](../index.md) | [Continua con la Schermata Home →](./schermata_home.md)

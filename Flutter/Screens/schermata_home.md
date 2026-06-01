@@ -8,7 +8,7 @@ La schermata Home è spesso un pannello di controllo o "Dashboard". In questa gu
 1.  Una barra di navigazione inferiore (**`BottomNavigationBar`**).
 2.  Una lista orizzontale di categorie cliccabili che filtrano una griglia sottostante (logica Dart in tempo reale).
 3.  Una griglia dinamica (**`GridView.builder`**) che mostra una serie di elementi con immagini e dettagli.
-4.  L'uso di widget di ottimizzazione come `ListView.builder` (vedi [Widget per Liste](./widget_principali.md#5-widget-per-liste-e-scorrimento)).
+4.  L'uso di widget di ottimizzazione come `ListView.builder` (vedi [Widget per Liste](../Widgets/widget_principali.md#5-widget-per-liste-e-scorrimento)).
 
 ---
 

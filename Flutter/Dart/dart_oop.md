@@ -1,6 +1,6 @@
 # 🏛️ Programmazione Orientata agli Oggetti (OOP) in Dart
 
-[← Torna all'Hub](./index.md) | [← Fondamenti di Dart](./dart_fondamenti.md)
+[← Torna all'Hub](../index.md) | [← Fondamenti di Dart](./dart_fondamenti.md)
 
 ---
 
@@ -139,7 +139,7 @@ class Gatto extends Animale {
 Dart offre costruttori unici pensati per ottimizzare lo sviluppo dei Widget in Flutter.
 
 ### 1. Costruttore Costante (`const`)
-Se una classe produce solo dati immutabili (campi `final`), puoi definire un costruttore `const`. Consente a Flutter di riutilizzare la stessa istanza in memoria (leggi l'impatto in [Ottimizzazione UI](./sviluppo_ios_android.md#5-ottimizzazione-delle-prestazioni)).
+Se una classe produce solo dati immutabili (campi `final`), puoi definire un costruttore `const`. Consente a Flutter di riutilizzare la stessa istanza in memoria (leggi l'impatto in [Ottimizzazione UI](../Theory/sviluppo_ios_android.md#5-ottimizzazione-delle-prestazioni)).
 ```dart
 class Punto {
   final double x;
@@ -196,4 +196,4 @@ User(String id, String username) {
 
 ---
 
-[← Torna all'Hub](./index.md) | [← Fondamenti di Dart](./dart_fondamenti.md)
+[← Torna all'Hub](../index.md) | [← Fondamenti di Dart](./dart_fondamenti.md)

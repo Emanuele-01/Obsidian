@@ -1,6 +1,6 @@
 # 🔌 Strumenti dell'Estensione VS Code per Flutter
 
-[← Flutter CLI & FVM](./flutter_cli_fvm.md) | [Torna all'Hub](./index.md) | [Continua con Scorciatoie Widget Snippets →](./vscode_widget_snippets.md)
+[← Flutter CLI & FVM](./flutter_cli_fvm.md) | [Torna all'Hub](../index.md) | [Continua con Scorciatoie Widget Snippets →](./vscode_widget_snippets.md)
 
 ---
 
@@ -28,7 +28,7 @@ Uno degli strumenti più potenti in assoluto. Posizionando il cursore su un widg
 *   **Wrap with Widget / Wrap with Column / Row / Padding / Center / Container**: Avvolge il widget corrente all'interno di un altro widget di layout senza dover spostare le parentesi a mano.
 *   **Remove this Widget**: Elimina il widget corrente e collega il suo figlio direttamente al widget genitore.
 *   **Convert to StatefulWidget / StatelessWidget**: Converte la classe del widget e riscrive automaticamente lo stato o il metodo `build()`.
-*   **Extract Widget**: Estrae la porzione di codice selezionata creando una nuova classe `StatelessWidget` separata (fondamentale per le performance, vedi [Ottimizzazione delle Prestazioni](./sviluppo_ios_android.md#5-ottimizzazione-delle-prestazioni)).
+*   **Extract Widget**: Estrae la porzione di codice selezionata creando una nuova classe `StatelessWidget` separata (fondamentale per le performance, vedi [Ottimizzazione delle Prestazioni](../Theory/sviluppo_ios_android.md#5-ottimizzazione-delle-prestazioni)).
 *   **Move Widget Up / Down**: Sposta l'ordine di dichiarazione di un widget all'interno di un array di figli (`children`).
 
 ---
@@ -44,7 +44,7 @@ Consente di ispezionare visivamente la struttura ad albero dei widget dell'appli
 *   **Select Widget Mode**: Cliccando su questo pulsante e poi su un elemento dello schermo del simulatore, l'IDE evidenzierà la riga di codice esatta che ha generato quell'elemento.
 *   **Debug Paint**: Disegna dei bordi e delle linee guida colorate attorno a tutti i widget a schermo. È utilissimo per capire perché un elemento non si allinea o per trovare le cause degli errori di *layout overflow* (pixel che escono dallo schermo).
 *   **Repaint Rainbow**: Assegna bordi di colori diversi a tutti i widget che vengono ridisegnati a schermo. Se vedi continui cambi di colore su un widget che dovrebbe essere statico, significa che stai sprecando cicli di calcolo ricostruendolo inutilmente.
-*   **Slow Animations**: Rallenta tutte le transizioni e le animazioni (es. transizioni [Hero](./schermata_dettaglio.md#2-spiegazione-dei-widget-utilizzati)) per valutarne la fluidità visiva.
+*   **Slow Animations**: Rallenta tutte le transizioni e le animazioni (es. transizioni [Hero](../Screens/schermata_dettaglio.md#2-spiegazione-dei-widget-utilizzati)) per valutarne la fluidità visiva.
 
 ### Performance & Memory (DevTools)
 *   **Performance View**: Mostra un grafico in tempo reale dei frame al secondo (FPS). Se un frame supera i 16ms (per schermi a 60Hz), viene segnalato in rosso (jank).
@@ -52,4 +52,4 @@ Consente di ispezionare visivamente la struttura ad albero dei widget dell'appli
 
 ---
 
-[← Flutter CLI & FVM](./flutter_cli_fvm.md) | [Torna all'Hub](./index.md) | [Continua con Scorciatoie Widget Snippets →](./vscode_widget_snippets.md)
+[← Flutter CLI & FVM](./flutter_cli_fvm.md) | [Torna all'Hub](../index.md) | [Continua con Scorciatoie Widget Snippets →](./vscode_widget_snippets.md)

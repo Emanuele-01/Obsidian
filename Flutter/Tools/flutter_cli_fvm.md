@@ -1,6 +1,6 @@
 # 🛠️ Flutter CLI & FVM (Flutter Version Manager)
 
-[← Torna all'Hub](./index.md) | [Continua con gli Strumenti VS Code →](./vscode_flutter_tools.md)
+[← Torna all'Hub](../index.md) | [Continua con gli Strumenti VS Code →](./vscode_flutter_tools.md)
 
 ---
 
@@ -81,4 +81,4 @@ Per far sì che l'estensione di VS Code utilizzi la versione locale di FVM anzic
 
 ---
 
-[← Torna all'Hub](./index.md) | [Continua con gli Strumenti VS Code →](./vscode_flutter_tools.md)
+[← Torna all'Hub](../index.md) | [Continua con gli Strumenti VS Code →](./vscode_flutter_tools.md)
