@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fc66d2cc18a3288a",
+        "id": "3781ece2d65cdda7",
         "type": "tabs",
         "children": [
           {
-            "id": "587d650791c6bbe7",
+            "id": "6e8b90e3925cc76d",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -164,8 +164,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -183,19 +183,21 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "587d650791c6bbe7",
+  "active": "4ae6f7f738d4b8f6",
   "lastOpenFiles": [
+    "Untitled",
+    "LLM-wiki/Perché i sistemi di gestione della conoscenza stanno adottando modelli basati su grafi.md",
+    "LLM-wiki/Database Notion vs Database a Grafi Strutturare la conoscenza accademica.md",
+    "LLM-wiki/Costruire la Base di Conoscenze LLM di Andrej Karpathy.md",
     "Sicurezza/Come Generare Chiavi SSH per GitHub.md",
     "Sicurezza/Come Generare Chiavi SSH.md",
     "Sicurezza",
-    "LLM-wiki/Costruire la Base di Conoscenze LLM di Andrej Karpathy.md",
-    "LLM-wiki/Perché i sistemi di gestione della conoscenza stanno adottando modelli basati su grafi.md",
     "LLM-wiki/Gestione della conoscenza personale basata su grafi AI.md",
     "LLM-wiki/Prima di costruire il tuo sistema personale di gestione della conoscenza.md",
-    "LLM-wiki/Database Notion vs Database a Grafi Strutturare la conoscenza accademica.md",
     "LLM-wiki/Gestione Della Conoscenza Personale.md",
     "Theo James.md",
     "Untitled.canvas",
