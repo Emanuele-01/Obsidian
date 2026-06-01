@@ -196,6 +196,12 @@
   },
   "active": "4ae6f7f738d4b8f6",
   "lastOpenFiles": [
+    "Rust/rust_tauri_cross_platform.md",
+    "Rust/rust_web_services.md",
+    "Rust/rust_best_practices.md",
+    "Rust/rust_ownership_safety.md",
+    "Rust/rust_fondamenti.md",
+    "Rust/index.md",
     "Rust",
     "Flutter/schermata_profile.md",
     "Flutter/dart_oop.md",
@@ -220,8 +226,6 @@
     "Untitled.canvas",
     "LLM-wiki/Before You Build Your Personal Knowledge Management System.md",
     "LLM-wiki/Gestione Della Conoscenza.md",
-    "Untitled/Untitled.md",
-    "LLM-wiki",
-    "Welcome.md"
+    "LLM-wiki"
   ]
 }
