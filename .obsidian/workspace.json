@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flutter/dart_fondamenti.md",
+                "file": "Flutter/schermata_profile.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "dart_fondamenti"
+              "title": "schermata_profile"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "48e52cffd8793709",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flutter/dart_fondamenti.md",
+                "file": "Flutter/schermata_profile.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for dart_fondamenti"
+              "title": "Backlinks for schermata_profile"
             }
           },
           {
@@ -114,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flutter/dart_fondamenti.md",
+                "file": "Flutter/schermata_profile.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from dart_fondamenti"
+              "title": "Outgoing links from schermata_profile"
             }
           },
           {
@@ -197,9 +196,13 @@
   },
   "active": "6542b2c28bb17a4f",
   "lastOpenFiles": [
+    "Flutter/schermata_profile.md",
+    "Flutter/dart_fondamenti.md",
+    "Flutter/schermata_dettaglio.md",
+    "Flutter/schermata_home.md",
+    "Flutter/schermata_login.md",
     "Flutter/widget_principali.md",
     "Flutter/index.md",
-    "Flutter/dart_fondamenti.md",
     "Flutter/sviluppo_ios_android.md",
     "Flutter",
     "LLM-wiki/Perché i sistemi di gestione della conoscenza stanno adottando modelli basati su grafi.md",
