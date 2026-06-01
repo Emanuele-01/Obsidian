@@ -11,10 +11,14 @@
             "id": "6e8b90e3925cc76d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "split-diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ]
@@ -187,9 +191,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4ae6f7f738d4b8f6",
+  "active": "6e8b90e3925cc76d",
   "lastOpenFiles": [
-    "Untitled",
+    "Flutter",
     "LLM-wiki/Perché i sistemi di gestione della conoscenza stanno adottando modelli basati su grafi.md",
     "LLM-wiki/Database Notion vs Database a Grafi Strutturare la conoscenza accademica.md",
     "LLM-wiki/Costruire la Base di Conoscenze LLM di Andrej Karpathy.md",
