@@ -15,16 +15,21 @@ graph TD
     Index --> Widgets[2. Guida ai Widget]
     Index --> Techniques[3. Sviluppo iOS & Android]
     Index --> Screens[4. Schermate Pratiche & Logica]
+    Index --> Tools[5. Strumenti & IDE]
     
     Dart -.->|Estende in| OOP
     Dart -.->|Sintassi Asincrona| Techniques
-    Widgets -.->|Gestione dello Stato| Techniques
     OOP -.->|Costruttori e Classi| Widgets
+    Widgets -.->|Gestione dello Stato| Techniques
     
     Screens --> Login[🔐 Login Screen]
     Screens --> Home[🏠 Home Screen]
     Screens --> Detail[🛍️ Detail Screen]
     Screens --> Profile[👤 Profile Screen]
+    
+    Tools --> CLI[🛠️ CLI & FVM]
+    Tools --> VSCode[🔌 Estensioni VS Code]
+    Tools --> Snippets[📝 Snippets Cheat Sheet]
 ```
 
 ### 1. 🎯 [Fondamenti di Dart](./dart_fondamenti.md)
@@ -67,6 +72,12 @@ graph TD
 *   🛍️ **[Schermata di Dettaglio](./schermata_dettaglio.md)**: Transizioni fluide con `Hero` widget, passaggio di dati e calcolo del carrello.
 *   👤 **[Schermata Profilo / Impostazioni](./schermata_profile.md)**: Gestione delle preferenze (Switch) e toggle dello stato tra modalità di lettura e modifica dati.
 
+### 5. 🛠️ [Strumenti di Sviluppo & CLI](./flutter_cli_fvm.md)
+*Tutto quello che serve per configurare l'ambiente e ottimizzare la produttività.*
+*   🛠️ **[Flutter CLI & FVM](./flutter_cli_fvm.md)**: Comandi di diagnostica, debug, build e gestione di più SDK Flutter contemporaneamente.
+*   🔌 **[Strumenti VS Code per Flutter](./vscode_flutter_tools.md)**: Scorciatoie per refactoring automatico, ispezione grafica della UI e debugging delle performance.
+*   📝 **[Scorciatoie Widget Snippets](./vscode_widget_snippets.md)**: Cheat sheet completo delle abbreviazioni per generare istantaneamente codice boilerplate in VS Code.
+
 ---
 
 ## 🚀 Percorso di Apprendimento Consigliato
@@ -75,4 +86,5 @@ graph TD
 2.  Approfondisci le regole della programmazione ad oggetti in [OOP in Dart](./dart_oop.md).
 3.  Impara a comporre la UI studiando i [Widget Principali](./widget_principali.md).
 4.  Vedi la teoria in pratica studiando le **[Schermate Esempio](./schermata_login.md)**.
-5.  Approfondisci l'architettura professionale e il rilascio in [Tecniche di Sviluppo](./sviluppo_ios_android.md).
+5.  Configura l'ambiente e velocizza lo sviluppo studiando gli **[Strumenti & CLI](./flutter_cli_fvm.md)**.
+6.  Approfondisci l'architettura professionale e il rilascio in [Tecniche di Sviluppo](./sviluppo_ios_android.md).

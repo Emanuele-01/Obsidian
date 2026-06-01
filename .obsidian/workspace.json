@@ -194,8 +194,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6542b2c28bb17a4f",
+  "active": "4ae6f7f738d4b8f6",
   "lastOpenFiles": [
+    "Flutter/vscode_widget_snippets.md",
+    "Flutter/vscode_flutter_tools.md",
+    "Flutter/flutter_cli_fvm.md",
     "Rust/rust_tauri_cross_platform.md",
     "Rust/rust_fondamenti.md",
     "Rust/index.md",
@@ -222,10 +225,7 @@
     "LLM-wiki/Gestione della conoscenza personale basata su grafi AI.md",
     "LLM-wiki/Prima di costruire il tuo sistema personale di gestione della conoscenza.md",
     "LLM-wiki/Gestione Della Conoscenza Personale.md",
-    "Theo James.md",
     "Untitled.canvas",
-    "LLM-wiki/Before You Build Your Personal Knowledge Management System.md",
-    "LLM-wiki/Gestione Della Conoscenza.md",
     "LLM-wiki"
   ]
 }
