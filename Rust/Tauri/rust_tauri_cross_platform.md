@@ -1,6 +1,6 @@
 # 💻 Sviluppo App Desktop Cross-Platform con Tauri
 
-[← Server Web & API](./rust_web_services.md) | [Torna all'Hub](./index.md)
+[← Server Web & API](../Web/rust_web_services.md) | [Torna all'Hub](../index.md)
 
 ---
 
@@ -111,7 +111,7 @@ btnContatore.addEventListener('click', async () => {
 Tauri consente di salvare strutture dati in memoria persistenti per tutta la durata dell'applicazione.
 *   **Registrazione:** Si usa `.manage(LaTuaStruct)` sul builder in `main.rs`.
 *   **Iniezione dei Dati:** Nei comandi Rust, basta aggiungere un parametro di tipo `tauri::State<'_, LaTuaStruct>` e Tauri inietterà automaticamente il riferimento corretto.
-*   **Sicurezza:** Poiché i comandi Tauri possono essere eseguiti in modo concorrente su thread diversi, lo stato deve essere thread-safe. Si usano tipi come `Mutex<T>` o `RwLock<T>` per sincronizzare i dati (vedi [Concorrenza Sicura](./rust_ownership_safety.md#6-concorrenza-sicura-fearless-concurrency)).
+*   **Sicurezza:** Poiché i comandi Tauri possono essere eseguiti in modo concorrente su thread diversi, lo stato deve essere thread-safe. Si usano tipi come `Mutex<T>` o `RwLock<T>` per sincronizzare i dati (vedi [Concorrenza Sicura](../Core/rust_ownership_safety.md#6-concorrenza-sicura-fearless-concurrency)).
 
 ---
 
@@ -133,4 +133,4 @@ Tauri richiede l'accesso ai compilatori nativi del sistema per generare i pacche
 
 ---
 
-[← Server Web & API](./rust_web_services.md) | [Torna all'Hub](./index.md)
+[← Server Web & API](../Web/rust_web_services.md) | [Torna all'Hub](../index.md)

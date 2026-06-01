@@ -1,6 +1,6 @@
 # 🛡️ Ownership, References & Sicurezza della Memoria
 
-[← Fondamenti di Rust](./rust_fondamenti.md) | [Torna all'Hub](./index.md) | [Continua con le Best Practices →](./rust_best_practices.md)
+[← Fondamenti di Rust](./rust_fondamenti.md) | [Torna all'Hub](../index.md) | [Continua con le Best Practices →](./rust_best_practices.md)
 
 ---
 
@@ -180,4 +180,4 @@ fn main() {
 
 ---
 
-[← Fondamenti di Rust](./rust_fondamenti.md) | [Torna all'Hub](./index.md) | [Continua con le Best Practices →](./rust_best_practices.md)
+[← Fondamenti di Rust](./rust_fondamenti.md) | [Torna all'Hub](../index.md) | [Continua con le Best Practices →](./rust_best_practices.md)

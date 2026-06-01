@@ -1,6 +1,6 @@
 # 🎯 Fondamenti di Rust
 
-[← Torna all'Hub](./index.md) | [Continua con Ownership & Sicurezza →](./rust_ownership_safety.md)
+[← Torna all'Hub](../index.md) | [Continua con Ownership & Sicurezza →](./rust_ownership_safety.md)
 
 ---
 
@@ -205,4 +205,4 @@ fn leggi_e_somma() -> Result<i32, std::io::Error> {
 
 ---
 
-[← Torna all'Hub](./index.md) | [Continua con Ownership & Sicurezza →](./rust_ownership_safety.md)
+[← Torna all'Hub](../index.md) | [Continua con Ownership & Sicurezza →](./rust_ownership_safety.md)

@@ -1,6 +1,6 @@
 # 🚀 Best Practices in Rust
 
-[← Ownership & Sicurezza](./rust_ownership_safety.md) | [Torna all'Hub](./index.md) | [Continua con Server Web & API →](./rust_web_services.md)
+[← Ownership & Sicurezza](./rust_ownership_safety.md) | [Torna all'Hub](../index.md) | [Continua con Server Web & API →](../Web/rust_web_services.md)
 
 ---
 
@@ -124,4 +124,4 @@ let parola = "rust";
 
 ---
 
-[← Ownership & Sicurezza](./rust_ownership_safety.md) | [Torna all'Hub](./index.md) | [Continua con Server Web & API →](./rust_web_services.md)
+[← Ownership & Sicurezza](./rust_ownership_safety.md) | [Torna all'Hub](../index.md) | [Continua con Server Web & API →](../Web/rust_web_services.md)

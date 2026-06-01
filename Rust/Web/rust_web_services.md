@@ -1,6 +1,6 @@
 # 🌐 Sviluppo di Server Web & API con Rust
 
-[← Best Practices](./rust_best_practices.md) | [Torna all'Hub](./index.md) | [Continua con Tauri Desktop →](./rust_tauri_cross_platform.md)
+[← Best Practices](../Core/rust_best_practices.md) | [Torna all'Hub](../index.md) | [Continua con Tauri Desktop →](../Tauri/rust_tauri_cross_platform.md)
 
 ---
 
@@ -148,7 +148,7 @@ async fn lista_utenti(
 Rust non possiede una gestione dei thread asincroni built-in nel suo motore runtime per mantenere il binario leggero. Si usa la macro `#[tokio::main]` per convertire la funzione `main` in una coroutine asincrona che gestisce la coda di esecuzione di tutte le funzioni marcate con `.await`.
 
 ### Estrazione dello Stato (`State<T>`)
-Axum permette di condividere risorse (connessioni database, configurazioni, cache) in modo sicuro tra i vari handler. La struttura `AppState` viene passata a `.with_state(stato)` e gli handler la estraggono tramite il parametro `State(stato)`. Questo processo garantisce la thread safety grazie alle regole di [Sync e Send](./rust_ownership_safety.md#6-concorrenza-sicura-fearless-concurrency).
+Axum permette di condividere risorse (connessioni database, configurazioni, cache) in modo sicuro tra i vari handler. La struttura `AppState` viene passata a `.with_state(stato)` e gli handler la estraggono tramite il parametro `State(stato)`. Questo processo garantisce la thread safety grazie alle regole di [Sync e Send](../Core/rust_ownership_safety.md#6-concorrenza-sicura-fearless-concurrency).
 
 ### Derivazione Serde (`Serialize`/`Deserialize`)
 Aggiungendo `#[derive(Serialize)]` a una struct, Serde genera a tempo di compilazione il codice per convertire quella struct in JSON. `Deserialize` fa il processo inverso. Questo evita il ricorso alla reflection a runtime, aumentando le prestazioni e riducendo l'uso di memoria.
@@ -158,4 +158,4 @@ Le query di SQLx sono parametrizzate (usando `$1`, `$2`), il che blocca a monte 
 
 ---
 
-[← Best Practices](./rust_best_practices.md) | [Torna all'Hub](./index.md) | [Continua con Tauri Desktop →](./rust_tauri_cross_platform.md)
+[← Best Practices](../Core/rust_best_practices.md) | [Torna all'Hub](../index.md) | [Continua con Tauri Desktop →](../Tauri/rust_tauri_cross_platform.md)
