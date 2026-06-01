@@ -1,4 +1,8 @@
-# Widget Principali in Flutter
+# 🧱 Widget Principali in Flutter
+
+[← Fondamenti di Dart](./dart_fondamenti.md) | [Torna all'Hub](./index.md) | [Continua con le Tecniche di Sviluppo →](./sviluppo_ios_android.md)
+
+---
 
 In Flutter, **tutto è un Widget**. I widget sono i mattoni fondamentali utilizzati per costruire l'interfaccia utente (UI) di un'applicazione. Essi descrivono l'aspetto della UI in base alla loro configurazione corrente e al loro stato.
 
@@ -6,7 +10,7 @@ In Flutter, **tutto è un Widget**. I widget sono i mattoni fondamentali utilizz
 
 ## 1. StatelessWidget vs StatefulWidget
 
-La prima distinzione fondamentale in Flutter è tra widget senza stato e widget con stato.
+La prima distinzione fondamentale in Flutter è tra widget senza stato e widget con stato. Entrambi estendono le classi base di Dart (per capire l'ereditarietà vedi la sezione [OOP in Dart](./dart_fondamenti.md#4-programmazione-orientata-agli-oggetti-oop)).
 
 ### StatelessWidget
 Rappresenta un widget immutabile. Le sue proprietà non cambiano nel tempo una volta costruito.
@@ -25,9 +29,14 @@ Rappresenta un widget che può cambiare il proprio stato interno durante il cicl
     5.  `setState()`: Richiede la ricostruzione del widget.
     6.  `dispose()`: Chiamato quando il widget viene rimosso definitivamente (usato per liberare risorse).
 
+> [!WARNING]
+> Un uso eccessivo di `setState` su widget di grandi dimensioni può causare problemi di performance. Per ovviare a questo, si usano pattern di architettura esterni come descritto in [State Management](./sviluppo_ios_android.md#1-architettura-e-gestione-dello-stato-state-management).
+
 ---
 
 ## 2. Widget Strutturali e di Layout Principali
+
+I widget in Flutter sfruttano ampiamente i **parametri nominati** di Dart per configurare le loro proprietà. Maggiori dettagli sulla sintassi in [Parametri Nominati](./dart_fondamenti.md#2-parametri-nominati-named-parameters).
 
 ### Scaffold
 Fornisce la struttura di layout visivo di base per le pagine secondo le linee guida del Material Design. Gestisce le aree standard di una schermata (barra superiore, corpo, menu laterale, ecc.).
@@ -105,8 +114,8 @@ Un box con dimensioni fisse. È ampiamente utilizzato per creare spazi vuoti tra
 Dispongono i loro figli rispettivamente in direzione verticale (`Column`) ed orizzontale (`Row`).
 *   **Parametri Principali:**
     *   `children`: (`List<Widget>`) L'elenco dei widget da disporre.
-    *   `mainAxisAlignment`: (`MainAxisAlignment`) Allineamento lungo l'asse principale (verticale per `Column`, orizzontale per `Row`). Esempi: `start`, `center`, `end`, `spaceBetween`, `spaceAround`.
-    *   `crossAxisAlignment`: (`CrossAxisAlignment`) Allineamento lungo l'asse trasversale. Esempi: `start`, `center`, `end`, `stretch`.
+    *   `mainAxisAlignment`: (`MainAxisAlignment`) Allineamento lungo l'asse principale (verticale per `Column`, orizzontale per `Row`).
+    *   `crossAxisAlignment`: (`CrossAxisAlignment`) Allineamento lungo l'asse trasversale.
 
 ```dart
 Column(
@@ -121,9 +130,9 @@ Column(
 ```
 
 ### Stack
-Sovrappone i suoi figli uno sopra l'altro (come i layer in Photoshop). Utile per sovrapporre elementi (es. un badge sopra un'icona o del testo sopra un'immagine).
+Sovrappone i suoi figli uno sopra l'altro. Utile per sovrapporre elementi (es. badge sopra icone o testo su sfondi sfumati).
 *   **Parametri Principali:**
-    *   `children`: (`List<Widget>`) I widget sovrapposti. L'ultimo elemento dell'elenco viene disegnato sopra gli altri.
+    *   `children`: (`List<Widget>`) I widget sovrappostisi. L'ultimo elemento dell'elenco viene disegnato sopra gli altri.
     *   `alignment`: (`AlignmentGeometry`) Come allineare i widget non posizionati nello stack.
 *   **Nota:** Spesso usato in combinazione con il widget **`Positioned`** per posizionare con precisione assoluta un figlio all'interno dello Stack (`top`, `bottom`, `left`, `right`).
 
@@ -137,6 +146,8 @@ Il widget di scorrimento più comune. Dispone i suoi figli uno dopo l'altro nell
     *   `children`: (`List<Widget>`) Lista di elementi (per liste corte).
     *   `scrollDirection`: (`Axis`) Direzione dello scorrimento (`Axis.vertical` o `Axis.horizontal`).
 *   **`ListView.builder`**: Variante ottimizzata per liste lunghe o infinite. Carica in memoria solo gli elementi attualmente visibili a schermo.
+    > [!TIP]
+    > L'uso di `ListView.builder` fa parte delle best-practice di ottimizzazione. Leggi di più su [Ottimizzazione delle Prestazioni](./sviluppo_ios_android.md#5-ottimizzazione-delle-prestazioni).
     *   `itemCount`: (`int`) Numero totale di elementi.
     *   `itemBuilder`: (`IndexedWidgetBuilder`) Funzione che ritorna il widget per un dato indice.
 
@@ -169,5 +180,9 @@ Pulsanti preconfigurati conformi al Material Design.
 *   `TextButton`: Pulsante piatto senza bordi definiti, ideale per azioni secondarie.
 *   `IconButton`: Un'icona cliccabile.
 *   **Parametri Principali:**
-    *   `onPressed`: (`VoidCallback`) Funzione eseguita al click (se impostato a `null`, il pulsante risulterà disabilitato).
+    *   `onPressed`: (`VoidCallback`) Funzione eseguita al click. Se impostato a `null`, il pulsante sarà disabilitato.
     *   `child`: (o `icon` per `IconButton`) Il widget interno del pulsante.
+
+---
+
+[← Fondamenti di Dart](./dart_fondamenti.md) | [Torna all'Hub](./index.md) | [Continua con le Tecniche di Sviluppo →](./sviluppo_ios_android.md)

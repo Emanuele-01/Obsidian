@@ -1,4 +1,8 @@
-# Fondamenti di Dart
+# 🎯 Fondamenti di Dart
+
+[← Torna all'Hub](./index.md) | [Continua con la Guida ai Widget →](./widget_principali.md)
+
+---
 
 Dart è il linguaggio di programmazione open-source sviluppato da Google ed è alla base del framework Flutter. È un linguaggio orientato agli oggetti, fortemente tipizzato, che supporta sia la compilazione JIT (Just-In-Time) per uno sviluppo rapido (Hot Reload) sia AOT (Ahead-Of-Time) per prestazioni native in produzione.
 
@@ -25,6 +29,8 @@ In Dart, tutto ciò che può essere inserito in una variabile è un *oggetto*. D
     final dataCorrente = DateTime.now(); // Calcolato a runtime
     ```
 *   `const`: Definisce una costante a tempo di compilazione (compile-time constant).
+    > [!TIP]
+    > L'uso costante di `const` è fondamentale anche in Flutter per ottimizzare la UI. Leggi come influisce sulle performance nella sezione [Ottimizzazione delle Prestazioni](./sviluppo_ios_android.md#5-ottimizzazione-delle-prestazioni).
     ```dart
     const pi = 3.14159; // Valore noto a priori
     ```
@@ -113,7 +119,7 @@ String saluta(String nome, [String? titolo]) {
 ```
 
 #### 2. Parametri Nominati (Named Parameters)
-Racchiusi tra parentesi graffe `{}`. Aumentano la leggibilità.
+Racchiusi tra parentesi graffe `{}`. Aumentano notevolmente la leggibilità e sono ampiamente utilizzati per definire le proprietà dei widget Flutter (vedi [Guida ai Widget](./widget_principali.md)).
 ```dart
 void creaUtente({required String nome, int eta = 18}) {
   print('Utente: $nome, Età: $eta');
@@ -127,9 +133,9 @@ creaUtente(nome: 'Alice', eta: 30);
 
 ## 4. Programmazione Orientata agli Oggetti (OOP)
 
-Dart è un linguaggio basato su classi e mixin.
+Dart è un linguaggio basato su classi e mixin. Ogni widget di Flutter è in realtà una classe Dart (leggi di più su [Stateless vs Stateful](./widget_principali.md#1-statelesswidget-vs-statefulwidget)).
 
-### Definizione di una Classe
+### Definizione di una Classe e Costruttori
 ```dart
 class Persona {
   String nome;
@@ -153,6 +159,7 @@ Dart supporta l'ereditarietà singola tramite `extends`.
 class Studente extends Persona {
   String corso;
 
+  // Si usa super per passare i parametri al costruttore della classe padre
   Studente(super.nome, super.eta, this.corso);
 
   @override
@@ -176,7 +183,7 @@ class Uccello with Volante {}
 
 ## 5. Programmazione Asincrona
 
-La programmazione asincrona in Dart si basa su due concetti chiave: `Future` (operazioni singole) e `Stream` (flussi di dati nel tempo).
+La programmazione asincrona in Dart si basa su due concetti chiave: `Future` (operazioni singole) e `Stream` (flussi di dati nel tempo). Questa logica è fondamentale per caricare dati da API o per implementare la [Gestione dello Stato](./sviluppo_ios_android.md#1-architettura-e-gestione-dello-stato-state-management).
 
 ### Future e Async/Await
 Un `Future` rappresenta un valore che sarà disponibile in futuro (es. chiamata API).
@@ -201,8 +208,7 @@ void main() async {
 ```
 
 ### Streams
-Uno `Stream` è una sequenza di eventi asincroni. Viene gestito con `listen` o con un ciclo `await for`.
-
+Uno `Stream` è una sequenza di eventi asincroni. Viene gestito con `listen` o con un ciclo `await for`. È la colonna portante di architetture come BLoC (Business Logic Component).
 ```dart
 Stream<int> conteggioAsincrono(int max) async* {
   for (int i = 1; i <= max; i++) {
@@ -211,3 +217,7 @@ Stream<int> conteggioAsincrono(int max) async* {
   }
 }
 ```
+
+---
+
+[← Torna all'Hub](./index.md) | [Continua con la Guida ai Widget →](./widget_principali.md)
