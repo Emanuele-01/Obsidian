@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "3781ece2d65cdda7",
+        "id": "0c90b33e6fe8eceb",
         "type": "tabs",
         "children": [
           {
-            "id": "6e8b90e3925cc76d",
+            "id": "6542b2c28bb17a4f",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
-              "state": {
-                "aFile": ".obsidian/workspace.json",
-                "bFile": ".obsidian/workspace.json",
-                "aRef": ""
-              },
-              "icon": "diff",
-              "title": "Diff: workspace.json  (Working Tree)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -191,7 +187,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6e8b90e3925cc76d",
+  "active": "73ca5e3f6b698c72",
   "lastOpenFiles": [
     "Flutter",
     "LLM-wiki/Perché i sistemi di gestione della conoscenza stanno adottando modelli basati su grafi.md",
