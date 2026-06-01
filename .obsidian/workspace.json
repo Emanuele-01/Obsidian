@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flutter/widget_principali.md",
+                "file": "Flutter/dart_fondamenti.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "widget_principali"
+              "title": "dart_fondamenti"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "48e52cffd8793709",
@@ -94,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Flutter/dart_fondamenti.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for dart_fondamenti"
             }
           },
           {
@@ -112,11 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Flutter/dart_fondamenti.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from dart_fondamenti"
             }
           },
           {
@@ -177,7 +180,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 388.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -193,8 +197,8 @@
   },
   "active": "6542b2c28bb17a4f",
   "lastOpenFiles": [
-    "Flutter/index.md",
     "Flutter/widget_principali.md",
+    "Flutter/index.md",
     "Flutter/dart_fondamenti.md",
     "Flutter/sviluppo_ios_android.md",
     "Flutter",
