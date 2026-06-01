@@ -11,10 +11,14 @@
             "id": "6542b2c28bb17a4f",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Flutter/widget_principali.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "widget_principali"
             }
           }
         ]
@@ -190,9 +194,9 @@
   "active": "6542b2c28bb17a4f",
   "lastOpenFiles": [
     "Flutter/index.md",
+    "Flutter/widget_principali.md",
     "Flutter/dart_fondamenti.md",
     "Flutter/sviluppo_ios_android.md",
-    "Flutter/widget_principali.md",
     "Flutter",
     "LLM-wiki/Perché i sistemi di gestione della conoscenza stanno adottando modelli basati su grafi.md",
     "LLM-wiki/Database Notion vs Database a Grafi Strutturare la conoscenza accademica.md",
