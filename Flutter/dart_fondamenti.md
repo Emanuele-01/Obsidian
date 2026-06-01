@@ -135,6 +135,10 @@ creaUtente(nome: 'Alice', eta: 30);
 
 Dart è un linguaggio basato su classi e mixin. Ogni widget di Flutter è in realtà una classe Dart (leggi di più su [Stateless vs Stateful](./widget_principali.md#1-statelesswidget-vs-statefulwidget)).
 
+> [!TIP]
+> Questa sezione tratta i concetti base della programmazione ad oggetti. Per un'analisi approfondita sui membri privati, visibilità, getter/setter e costruttori factory, consulta la guida completa: **[OOP in Dart](./dart_oop.md)**.
+
+
 ### Definizione di una Classe e Costruttori
 ```dart
 class Persona {
