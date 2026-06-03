@@ -16,7 +16,7 @@ Bash
 pip install markitdown
 ```
 
-> ⚠️ **Nota per i file Audio e Immagini:** Se vuoi usare MarkItDown per trascrivere file audio o analizzare immagini, lo strumento si appoggia a dei modelli di Intelligenza Artificiale. In quel caso, avrai bisogno di installare anche i pacchetti aggiuntivi per i plugin (come le librerie di OpenAI o Azure Document Intelligence) a seconda di cosa deciderai di usare.
+> ⚠️ **Nota per i file Audio e Immagini:** Se vuoi usare MarkIt Down per trascrivere file audio o analizzare immagini, lo strumento si appoggia a dei modelli di Intelligenza Artificiale. In quel caso, avrai bisogno di installare anche i pacchetti aggiuntivi per i plugin (come le librerie di OpenAI o Azure Document Intelligence) a seconda di cosa deciderai di usare.
 
 ## 2. Come usarlo da Riga di Comando (CLI)
 
