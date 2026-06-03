@@ -23,7 +23,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Markit Down.md",
+                "file": "Librerie/Markit Down.md",
                 "mode": "source",
                 "source": false
               },
@@ -202,10 +202,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9fc0652d896970f0",
+  "active": "4ae6f7f738d4b8f6",
   "lastOpenFiles": [
     "Sicurezza/Come Generare Chiavi SSH per GitHub.md",
-    "Markit Down.md",
+    "Librerie/Markit Down.md",
     "Librerie",
     "Rust/Web/rust_web_services.md",
     "Rust/Web",
