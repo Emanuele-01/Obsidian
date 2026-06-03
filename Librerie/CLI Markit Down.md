@@ -91,6 +91,3 @@ for file in *.docx; do markitdown "$file" -o "${file%.docx}.md"; done
 ```
 
 Se provi a lanciare uno di questi comandi sui tuoi file e qualcosa non ti torna nel formato finale, dimmi pure che tipo di documento stai convertendo!
-
-- **[[CLI Command MarkitDown|CLI Markit Down]]**
-- 
