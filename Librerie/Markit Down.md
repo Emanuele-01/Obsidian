@@ -92,3 +92,6 @@ print(result.text_content)
 ## Perché è così utile?
 
 La magia di MarkItDown sta nel modo in cui gestisce i dati complessi. Se converti un file **Excel**, non ti espellerà un testo illeggibile, ma trasformerà i fogli di calcolo in **tabelle Markdown ben formattate**. Se converti un **PowerPoint**, strutturerà le slide in titoli (`## Slide 1`) e punti elenco.
+
+- **[[CLI Markit Down|Cli Command]]**
+- 

@@ -4,35 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "0c90b33e6fe8eceb",
+        "id": "545bc63b9feb5f38",
         "type": "tabs",
         "children": [
           {
-            "id": "6542b2c28bb17a4f",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "9fc0652d896970f0",
+            "id": "6373e704c25a1a83",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Sicurezza/Untitled.md",
+                "file": "Librerie/Markit Down.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Markit Down"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -202,11 +191,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9fc0652d896970f0",
+  "active": "6373e704c25a1a83",
   "lastOpenFiles": [
+    "Librerie/CLI Markit Down.md",
     "Librerie/Markit Down.md",
-    "Sicurezza/Untitled.md",
+    "Cli Command.md",
     "Sicurezza/Come Generare Chiavi SSH per GitHub.md",
+    "CLI Command MarkitDown.md",
+    "LLM-wiki/Costruire la Base di Conoscenze LLM di Andrej Karpathy.md",
+    "LLM-wiki/Database Notion vs Database a Grafi Strutturare la conoscenza accademica.md",
     "Librerie",
     "Rust/Web/rust_web_services.md",
     "Rust/Web",
@@ -235,10 +228,6 @@
     "Flutter/Tools",
     "Flutter/vscode_flutter_tools.md",
     "Flutter/flutter_cli_fvm.md",
-    "Flutter/index.md",
-    "Flutter/dart_oop.md",
-    "Rust/index.md",
-    "Rust/rust_tauri_cross_platform.md",
     "Rust",
     "Untitled.canvas"
   ]
