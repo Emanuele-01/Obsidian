@@ -204,6 +204,7 @@
   },
   "active": "9fc0652d896970f0",
   "lastOpenFiles": [
+    "Sicurezza/Come Generare Chiavi SSH per GitHub.md",
     "Markit Down.md",
     "Librerie",
     "Rust/Web/rust_web_services.md",
@@ -238,7 +239,6 @@
     "Rust/index.md",
     "Rust/rust_tauri_cross_platform.md",
     "Rust/rust_fondamenti.md",
-    "Rust/rust_best_practices.md",
     "Rust",
     "Untitled.canvas"
   ]

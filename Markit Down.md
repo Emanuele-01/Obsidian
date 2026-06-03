@@ -1,14 +1,14 @@
-**MarkItDown** è uno strumento open-source pazzesco rilasciato da Microsoft. Serve a risolvere un problema noiosissimo: **convertire file di vari formati (Word, PDF, Excel, PowerPoint, audio, immagini) in testo Markdown pulito**.
+**MarkIt Down** è uno strumento open-source pazzesco rilasciato da Microsoft. Serve a risolvere un problema noiosissimo: **convertire file di vari formati (Word, PDF, Excel, PowerPoint, audio, immagini) in testo Markdown pulito**.
 
 È perfetto se devi dare in pasto dei documenti a un LLM (come me!), creare documentazione o semplicemente ripulire i tuoi file.
 
 Ecco una panoramica completa su come installarlo e usarlo, sia da riga di comando che in Python.
 
-## 1. Come installare MarkItDown
+## 1. Come installare MarkIt Down
 
 L'installazione è semplicissima perché lo strumento è distribuito come pacchetto Python. Ti basta usare `pip` (il gestore di pacchetti di Python).
 
-Apri il tuo terminale (o Prompt dei comandi / PowerShell) e digita:
+Apri il tuo terminale (o Prompt dei comandi / Power Shell) e digita:
 
 Bash
 
