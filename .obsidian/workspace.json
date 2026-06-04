@@ -11,10 +11,14 @@
             "id": "587d650791c6bbe7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "LLM-wiki/Costruire la Base di Conoscenze LLM di Andrej Karpathy.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Costruire la Base di Conoscenze LLM di Andrej Karpathy"
             }
           }
         ]
@@ -150,12 +154,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "LLM-wiki/Costruire la Base di Conoscenze LLM di Andrej Karpathy.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Costruire la Base di Conoscenze LLM di Andrej Karpathy"
             }
           },
           {
@@ -167,9 +172,59 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "9f648672bdfd349e",
+            "type": "leaf",
+            "state": {
+              "type": "translator-view",
+              "state": {},
+              "icon": "dummy",
+              "title": "DEBUG (Error)"
+            }
+          },
+          {
+            "id": "6e94996a7af99041",
+            "type": "leaf",
+            "state": {
+              "type": "translator-view",
+              "state": {},
+              "icon": "dummy",
+              "title": "DEBUG (Error)"
+            }
+          },
+          {
+            "id": "905357c5f6aa74d6",
+            "type": "leaf",
+            "state": {
+              "type": "translator-view",
+              "state": {},
+              "icon": "dummy",
+              "title": "DEBUG (Error)"
+            }
+          },
+          {
+            "id": "77e52df6bfa6f2ed",
+            "type": "leaf",
+            "state": {
+              "type": "translator-view",
+              "state": {},
+              "icon": "dummy",
+              "title": "DEBUG (Error)"
+            }
+          },
+          {
+            "id": "7a90d426da541121",
+            "type": "leaf",
+            "state": {
+              "type": "translator-view",
+              "state": {},
+              "icon": "dummy",
+              "title": "DEBUG (Error)"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 10
       }
     ],
     "direction": "horizontal",
@@ -184,18 +239,19 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "translate:Open translation view": false
     }
   },
-  "active": "587d650791c6bbe7",
+  "active": "4ae6f7f738d4b8f6",
   "lastOpenFiles": [
+    "LLM-wiki/Prima di costruire il tuo sistema personale di gestione della conoscenza.md",
     "Sicurezza/Come Generare Chiavi SSH per GitHub.md",
     "Sicurezza/Come Generare Chiavi SSH.md",
     "Sicurezza",
     "LLM-wiki/Costruire la Base di Conoscenze LLM di Andrej Karpathy.md",
     "LLM-wiki/Perché i sistemi di gestione della conoscenza stanno adottando modelli basati su grafi.md",
     "LLM-wiki/Gestione della conoscenza personale basata su grafi AI.md",
-    "LLM-wiki/Prima di costruire il tuo sistema personale di gestione della conoscenza.md",
     "LLM-wiki/Database Notion vs Database a Grafi Strutturare la conoscenza accademica.md",
     "LLM-wiki/Gestione Della Conoscenza Personale.md",
     "Theo James.md",
