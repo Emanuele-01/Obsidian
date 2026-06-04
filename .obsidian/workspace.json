@@ -218,13 +218,36 @@
             "type": "leaf",
             "state": {
               "type": "translator-view",
-              "state": {},
-              "icon": "dummy",
-              "title": "DEBUG (Error)"
+              "state": {
+                "language_from": "auto",
+                "language_to": "en",
+                "translation_service": "deepl",
+                "auto_translate": false,
+                "apply_glossary": true,
+                "view_mode": 0,
+                "filter_mode": 0,
+                "show_attribution": false,
+                "top_buttons": [
+                  "change-service",
+                  "automatic-translation",
+                  "change-layout",
+                  "apply-filter",
+                  "open-settings"
+                ],
+                "left_buttons": [
+                  "paste",
+                  "clear"
+                ],
+                "right_buttons": [
+                  "copy"
+                ]
+              },
+              "icon": "deepl",
+              "title": "DeepL"
             }
           }
         ],
-        "currentTab": 10
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -243,7 +266,7 @@
       "translate:Open translation view": false
     }
   },
-  "active": "4ae6f7f738d4b8f6",
+  "active": "73ca5e3f6b698c72",
   "lastOpenFiles": [
     "LLM-wiki/Prima di costruire il tuo sistema personale di gestione della conoscenza.md",
     "Sicurezza/Come Generare Chiavi SSH per GitHub.md",
