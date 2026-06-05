@@ -1,6 +1,6 @@
 # Guida a GoRouter in Flutter
 
-GoRouter è un package per Flutter che offre un sistema di routing dichiarativo basato sulla Router API, con un approccio centrato sugli URL e pensato per semplificare la navigazione tra schermate diverse.[# Navigation and routing] La documentazione Flutter indica che `Navigator` e `Router` possono convivere, e suggerisce l'uso di un package come GoRouter quando servono esigenze più avanzate, come deep link o configurazioni di navigazione più articolate.[cite:39]
+GoRouter è un package per Flutter che offre un sistema di routing dichiarativo basato sulla Router API, con un approccio centrato sugli URL e pensato per semplificare la navigazione tra schermate diverse.[Navigation and routing](https://docs.flutter.dev/ui/navigation), [] La documentazione Flutter indica che `Navigator` e `Router` possono convivere, e suggerisce l'uso di un package come GoRouter quando servono esigenze più avanzate, come deep link o configurazioni di navigazione più articolate.[cite:39]
 
 ## Quando usarlo
 
