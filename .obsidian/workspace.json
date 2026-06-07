@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "LLM-wiki/Costruire la Base di Conoscenze LLM di Andrej Karpathy.md",
+                "file": "Flutter/Library/gorouter_guida_flutter.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Costruire la Base di Conoscenze LLM di Andrej Karpathy"
+              "title": "gorouter_guida_flutter"
             }
           }
         ]
@@ -266,13 +266,13 @@
       "translate:Open translation view": false
     }
   },
-  "active": "4ae6f7f738d4b8f6",
+  "active": "587d650791c6bbe7",
   "lastOpenFiles": [
     "Flutter/Library/guida_onesignal_flutter.md",
     "Flutter/Library/gorouter_guida_flutter.md",
+    "LLM-wiki/Costruire la Base di Conoscenze LLM di Andrej Karpathy.md",
     "Flutter/Library",
     "conflict-files-obsidian-git.md",
-    "LLM-wiki/Costruire la Base di Conoscenze LLM di Andrej Karpathy.md",
     "Rust/Tauri/rust_tauri_cross_platform.md",
     "Rust/Web/rust_web_services.md",
     "Rust/Core/rust_ownership_safety.md",
