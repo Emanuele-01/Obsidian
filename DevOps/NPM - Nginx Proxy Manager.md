@@ -8,7 +8,7 @@ In un'infrastruttura di micro servizi o di self-hosting, i moduli applicativi (c
 
 NPM si posiziona come **Reverse Proxy** e **Edge Router** (punto di ingresso unico). I suoi scopi tecnici principali sono:
 
-- **Inversion of Control (Routing di Livello 7):** NPM opera al livello Applicazione (L7) dello stack OSI. Legge l'header `Host` delle richieste HTTP/HTTPS entranti (es. `google.com` vs `amazon.it`) e mappa i flussi di traffico verso i corretti socket interni.
+- **Inversion of Control (Routing di Livello 7):** NPM opera al livello Applicazione (L7) dello stack OSI. Legge l'header `Host` delle richieste HTTP/HTTPS entranti (es. `google.it` vs `google.com`) e mappa i flussi di traffico verso i corretti socket interni.
     
 - **TLS/SSL Termination:** NPM agisce come l'estremo finale della crittografia asimmetrica verso l'esterno. Gestisce l'handshake TLS (fino a TLS 1.3), decifra il traffico sul perimetro e lo inoltra ai servizi di backend in chiaro (HTTP) o tramite canali cifrati interni, sollevando le applicazioni a valle dal carico computazionale della crittografia.
     
