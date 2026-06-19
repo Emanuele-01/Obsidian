@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DevOps/NPM - Nginx Proxy Manager.md",
+                "file": "AI/QLoRA/Glossario e Concetti su QLoRA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NPM - Nginx Proxy Manager"
+              "title": "Glossario e Concetti su QLoRA"
             }
           }
         ]
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DevOps/NPM - Nginx Proxy Manager.md",
+                "file": "AI/QLoRA/Glossario e Concetti su QLoRA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from NPM - Nginx Proxy Manager"
+              "title": "Outgoing links from Glossario e Concetti su QLoRA"
             }
           },
           {
@@ -270,6 +270,7 @@
   },
   "active": "8e3360cec57d8be1",
   "lastOpenFiles": [
+    "DevOps/NPM - Nginx Proxy Manager.md",
     "AI/QLoRA/Glossario e Concetti su QLoRA.md",
     "AI/QLoRA/Approfondimento Tecnico QLoRA.md",
     "AI/Fine Tuning/Guida Completa al Fine-Tuning.md",
@@ -277,7 +278,6 @@
     "AI/QLoRA",
     "AI/Fine Tuning",
     "AI",
-    "DevOps/NPM - Nginx Proxy Manager.md",
     "DevOps",
     "Untitled.md",
     "Flutter/Library/gorouter_guida_flutter.md",
