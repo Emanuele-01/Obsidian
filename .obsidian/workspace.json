@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/QLoRA/Glossario e Concetti su QLoRA.md",
+                "file": "AI/QLoRA/5 Iperparametri Fondamentali QLoRA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Glossario e Concetti su QLoRA"
+              "title": "5 Iperparametri Fondamentali QLoRA"
             }
           }
         ]
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "AI/QLoRA/Glossario e Concetti su QLoRA.md",
+                "file": "AI/QLoRA/5 Iperparametri Fondamentali QLoRA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Glossario e Concetti su QLoRA"
+              "title": "Outgoing links from 5 Iperparametri Fondamentali QLoRA"
             }
           },
           {
@@ -270,9 +270,10 @@
   },
   "active": "8e3360cec57d8be1",
   "lastOpenFiles": [
-    "DevOps/NPM - Nginx Proxy Manager.md",
-    "AI/QLoRA/Glossario e Concetti su QLoRA.md",
     "AI/QLoRA/Approfondimento Tecnico QLoRA.md",
+    "AI/QLoRA/Glossario e Concetti su QLoRA.md",
+    "AI/QLoRA/5 Iperparametri Fondamentali QLoRA.md",
+    "DevOps/NPM - Nginx Proxy Manager.md",
     "AI/Fine Tuning/Guida Completa al Fine-Tuning.md",
     "AI/Fine Tuning/Glossario e Concetti Chiave del Fine-Tuning.md",
     "AI/QLoRA",
@@ -305,7 +306,6 @@
     "Flutter/Tools/vscode_widget_snippets.md",
     "Flutter/Tools/vscode_flutter_tools.md",
     "Flutter/Tools/flutter_cli_fvm.md",
-    "Flutter/Screens/schermata_profile.md",
     "Untitled.canvas"
   ]
 }
