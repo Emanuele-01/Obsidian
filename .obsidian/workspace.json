@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "fc66d2cc18a3288a",
+        "id": "4fc32dfc0626a625",
         "type": "tabs",
         "children": [
           {
-            "id": "587d650791c6bbe7",
+            "id": "8e3360cec57d8be1",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "DevOps/NPM - Nginx Proxy Manager.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NPM - Nginx Proxy Manager"
             }
           }
         ]
@@ -108,11 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "DevOps/NPM - Nginx Proxy Manager.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from NPM - Nginx Proxy Manager"
             }
           },
           {
@@ -243,11 +248,12 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -262,18 +268,19 @@
       "translate:Open translation view": false
     }
   },
-  "active": "587d650791c6bbe7",
+  "active": "8e3360cec57d8be1",
   "lastOpenFiles": [
     "AI/QLoRA/Glossario e Concetti su QLoRA.md",
     "AI/QLoRA/Approfondimento Tecnico QLoRA.md",
+    "AI/Fine Tuning/Guida Completa al Fine-Tuning.md",
     "AI/Fine Tuning/Glossario e Concetti Chiave del Fine-Tuning.md",
     "AI/QLoRA",
-    "AI/Fine Tuning/Guida Completa al Fine-Tuning.md",
-    "Flutter/Library/gorouter_guida_flutter.md",
     "AI/Fine Tuning",
     "AI",
     "DevOps/NPM - Nginx Proxy Manager.md",
     "DevOps",
+    "Untitled.md",
+    "Flutter/Library/gorouter_guida_flutter.md",
     "Sicurezza/File Lock.md",
     "Flutter/Library/guida_onesignal_flutter.md",
     "LLM-wiki/Costruire la Base di Conoscenze LLM di Andrej Karpathy.md",
@@ -299,7 +306,6 @@
     "Flutter/Tools/vscode_flutter_tools.md",
     "Flutter/Tools/flutter_cli_fvm.md",
     "Flutter/Screens/schermata_profile.md",
-    "Flutter/Screens/schermata_login.md",
     "Untitled.canvas"
   ]
 }
