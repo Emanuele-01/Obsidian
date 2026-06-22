@@ -117,6 +117,8 @@ L'assenza o l'errata implementazione di un file lock espone i sistemi a gravi vu
 
 Uno dei vettori di attacco più noti è il **TOCTOU (Time-of-Check to Time-of-Use)**. Si tratta di una vulnerabilità logica in cui un programma controlla lo stato di una risorsa (es. _"Il file esiste?"_ o _"L'utente ha i permessi?"_) e successivamente esegue un'azione basata su quel controllo.
 
+Per un'analisi dettagliata di questa vulnerabilità, dei vettori di attacco basati su scambi di link simbolici e dei metodi di mitigazione via descrittori di file, si rimanda a [[Approfondimento Vulnerabilità TOCTOU e Race Conditions]].
+
 Se un attaccante riesce ad alterare il file nel brevissimo intervallo di tempo tra il controllo (Check) e l'utilizzo (Use), può indurre il programma a eseguire azioni malevole, come sovrascrivere file di sistema (es. `/etc/passwd`) o scalare i privilegi. Un file lock atomico impedisce qualsiasi alterazione della risorsa tra la fase di controllo e quella di utilizzo.
 
 ### B. Prevenzione del Denial of Service (DoS) indotto

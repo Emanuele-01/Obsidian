@@ -46,13 +46,15 @@ Un'ottimizzazione di LoRA che scompone matematicamente i pesi in magnitudo e dir
 Il processo di addestramento basato su esempi espliciti composti da una domanda (o istruzione) e dalla relativa risposta ideale (Ground Truth). Per vedere dove si inserisce nel flusso di training, vedi [[I 4 Step Fondamentali di Training#2. Loss Calculation]].
 
 ### 10. DPO e ORPO (Allineamento delle Preferenze)
-* **DPO (Direct Preference Optimization):** Insegna al modello le preferenze umane tramite coppie di risposte (scelte/rifiutate).
+* **DPO (Direct Preference Optimization):** Insegna al modello le preferenze umane tramite coppie di risposte (scelte/rifiutate) evitando l'addestramento di un modello di ricompensa. Vedi [[Approfondimento DPO]].
 * **ORPO (Odds Ratio Preference Optimization):** Una metodologia avanzata che unisce SFT e allineamento delle preferenze in un unico step logico. Vedi [[Approfondimento ORPO]].
 
 ### 11. FlashAttention
 Un algoritmo che ottimizza il calcolo dell'attenzione riducendo i colli di bottiglia di I/O della GPU. Per saperne di più sulle versioni 1, 2 e 3, consulta [[Approfondimento FlashAttention]].
 
 ### 12. GGUF / AWQ
-Formati di esportazione e compressione dei modelli finiti:
-* **GGUF:** Ottimizzato per l'inferenza anche su CPU o sistemi con poca GPU (molto usato con Ollama).
-* **AWQ:** Ottimizzato per un'inferenza ultra-veloce basata puramente su GPU in ambienti di produzione (usato con vLLM).
+Formati di esportazione e compressione dei modelli finiti dopo la quantizzazione post-training:
+* **GGUF:** Ottimizzato per l'inferenza anche su CPU o sistemi con poca GPU.
+* **AWQ:** Ottimizzato per un'inferenza ultra-veloce basata puramente su GPU in ambienti di produzione.
+* **EXL2:** Formato a bitrate variabile altamente ottimizzato per GPU desktop e schede consumer.
+* Per un confronto dettagliato tra questi formati, consulta [[Approfondimento Formati Inferenza GGUF AWQ EXL2]].

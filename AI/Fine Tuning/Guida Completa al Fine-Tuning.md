@@ -35,7 +35,7 @@ Quando si effettua il fine-tuning di un modello open-source, si ha il controllo 
 
 * **Accesso completo ai pesi (Weights):** È possibile modificare direttamente i parametri interni del modello, consentendo ottimizzazioni matematiche avanzate non applicabili tramite API esterne.
 * **Privacy e Sovranità dei Dati:** I dati di addestramento (che spesso includono segreti aziendali, stringhe di configurazione, codice proprietario o dati sensibili) non lasciano mai l'infrastruttura locale o il VPS dedicato.
-* **Personalizzazione del Formato di Output:** Si può addestrare il modello a rispondere nativamente rispettando token di sistema personalizzati, formati speciali o strutture dati complesse.
+* **Personalizzazione del Formato di Output:** Si può addestrare il modello a rispondere nativamente rispettando token di sistema personalizzati, formati speciali o strutture dati complesse. Questo avviene applicando appositi [[Approfondimento Chat Templates e Tokenizzazione#1. Chat Templates: Standardizzare i Dialoghi|Chat Templates]] in Jinja2 e mascherando la loss sui prompt dell'utente tramite il [[Approfondimento Chat Templates e Tokenizzazione#2. Mascheramento della Loss (Target-only Loss Masking)|Loss Masking]].
 * **Ottimizzazione dei Costi di Inferenza:** Un modello open-source da 8B o 14B parametri, accuratamente rifinito su un compito specifico, può superare in accuratezza modelli commerciali molto più grandi, riducendo drasticamente i costi computazionali di inferenza se eseguito su hardware dedicato o cluster auto-ospitati (es. tramite Docker ed Ollama/vLLM).
 
 ---
@@ -54,7 +54,7 @@ L'addestramento completo (*Full Fine-Tuning*) di tutti i parametri richiede un'e
 ### B. Allineamento Avanzato e Post-Training (Sostituti di RLHF)
 L'apprendimento per rinforzo basato sui feedback umani (RLHF) del passato era complesso e instabile. Nel 2026 si utilizzano tecniche dirette:
 
-* **DPO (Direct Preference Optimization):** Elimina la necessità di addestrare un modello di ricompensa separato. DPO ottimizza il modello direttamente sui dati di preferenza utilizzando una funzione di perdita binaria semplice ed elegante.
+* **DPO (Direct Preference Optimization):** Elimina la necessità di addestrare un modello di ricompensa separato. DPO ottimizza il modello direttamente sui dati di preferenza utilizzando una funzione di perdita binaria semplice ed elegante (vedi [[Approfondimento DPO]]).
 * **ORPO (Odds Ratio Preference Optimization):** Integra la fase di Supervised Fine-Tuning (SFT) e l'allineamento delle preferenze in un unico step logico. Riduce drasticamente i tempi di calcolo e previene la degradazione delle performance del modello su compiti generici durante l'allineamento specialistico (vedi [[Approfondimento ORPO]]).
 
 ### C. Pipeline di Generazione Sintetica del Dataset
@@ -66,7 +66,7 @@ La qualità del fine-tuning dipende interamente dalla qualità dei dati. Nel 202
 
 Per implementare queste metodologie nel 2026, lo stack tecnologico raccomandato prevede l'utilizzo di librerie open-source consolidate gestite tramite container o ambienti di sviluppo isolati:
 
-1. **Dataset Curation:** `Hugging Face Datasets` e script di parsing custom.
-2. **Training Engine:** `Axolotl` o `TRL (Transformer Reinforcement Learning)` integrati con `DeepSpeed` per la gestione della memoria.
+1. **Dataset Curation:** `Hugging Face Datasets` e script di parsing custom (con standardizzazione tramite [[Approfondimento Chat Templates e Tokenizzazione|Chat Templates]]).
+2. **Training Engine:** `Axolotl` o `TRL (Transformer Reinforcement Learning)` integrati con `DeepSpeed` per il partizionamento dei dati in memoria (ZeRO Stage 1/2/3, vedi [[Approfondimento DeepSpeed e ZeRO]]).
 3. **Hardware Efficiency:** Abilitazione nativa di `FlashAttention-2` o `FlashAttention-3` per ottimizzare l'uso dei Tensor Core delle GPU e accelerare il calcolo dei meccanismi di attenzione (vedi [[Approfondimento FlashAttention]]).
-4. **Deployment:** Esportazione dei pesi finali (fusi con il modello base) in formato `GGUF` per inferenza locale CPU/GPU leggera, o `AWQ/EXL2` per server ad alte prestazioni (vLLM).
+4. **Deployment:** Esportazione dei pesi finali (fusi con il modello base) quantizzati nei formati ottimizzati per l'inferenza target: `GGUF` per CPU/GPU ibrida, o `AWQ`/`EXL2` per GPU (vedi [[Approfondimento Formati Inferenza GGUF AWQ EXL2]]).

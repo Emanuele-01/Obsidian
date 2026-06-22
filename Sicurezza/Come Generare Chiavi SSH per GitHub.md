@@ -28,7 +28,7 @@ Ora, entrando nel merito di come funzionano realmente le chiavi SSH, dovete capi
 
 Iniziamo con le basi.
 
-Il protocollo SSH usa una tecnica di crittografia chiamata **crittografia asimmetrica**. Questo termine può sembrare complicato e strano, ma niente potrebbe essere più lontano dalla verità.
+Il protocollo SSH usa una tecnica di crittografia chiamata **crittografia asimmetrica**. Questo termine può sembrare complicato e strano, ma niente potrebbe essere più lontano dalla verità. Per un'analisi approfondita delle differenze di sicurezza ed efficienza tra i vari algoritmi crittografici disponibili (come RSA, ECDSA e Ed25519), si rimanda a [[Approfondimento Algoritmi Crittografici SSH]].
 
 Fondamentalmente, la crittografia asimmetrica è un sistema che usa una coppia di chiavi, cioè la chiave **pubblica** e quella **privata**.
 
@@ -103,7 +103,7 @@ ssh-keygen -t ed25519 -C "kinstauser@kinsta.com"
 Tuttavia, è importante capire ogni comando che introduciamo nei nostri terminali, quindi vediamo cosa significa ogni sua parte.
 
 - [ssh-keygen](https://linux.die.net/man/1/ssh-keygen): lo strumento a riga di comando utilizzato per creare una nuova coppia di chiavi SSH. Potete vedere i suoi flag con `ssh-keygen help`
-- – **t ed25519**: il flag `-t` si usa per indicare l’algoritmo utilizzato per creare la firma digitale della coppia di chiavi. Se il vostro sistema lo supporta, `ed25519` è il miglior algoritmo che potete usare per creare coppie di chiavi SSH.
+- – **t ed25519**: il flag `-t` si usa per indicare l’algoritmo utilizzato per creare la firma digitale della coppia di chiavi. Se il vostro sistema lo supporta, [[Approfondimento Algoritmi Crittografici SSH#3. Ed25519 (Edwards-curve Digital Signature Algorithm)|ed25519]] è il miglior algoritmo che potete usare per creare coppie di chiavi SSH per motivi di sicurezza e velocità.
 - **\-C “email”**: il flag `-C` è utilizzato per fornire un commento personalizzato alla fine della chiave pubblica, che di solito è l’email o l’identificazione del creatore della coppia di chiavi.
 
 Dopo aver digitato il comando nel vostro terminale, dovrete inserire il file in cui vorreste salvare le chiavi. Per impostazione predefinita, si trova nella vostra home directory, in una cartella nascosta chiamata “.ssh”, ma potete cambiarla in quello che volete.
@@ -211,7 +211,7 @@ Se tutto è andato bene, congratulazioni! Avete appena impostato una connessione
 
 Se avete più account GitHub, diciamo uno per i vostri progetti personali e uno per lavoro, è difficile usare SSH per entrambi. Di solito avreste bisogno di macchine separate per autenticarvi sui diversi account GitHub.
 
-Ma questo può essere risolto facilmente configurando il file di configurazione di SSH.
+Ma questo può essere risolto facilmente configurando il file di configurazione di SSH. Per dettagli sulle direttive avanzate supportate da questo file (come il Proxy Jumping per connettersi a macchine private tramite Bastion, opzioni Keep-Alive e considerazioni di sicurezza sul Forwarding), consultate [[Approfondimento Configurazione Avanzata SSH]].
 
 Entriamo nel merito.
 
