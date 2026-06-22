@@ -47,18 +47,18 @@ Nel 2026, il panorama del fine-tuning si è consolidato attorno all'efficienza e
 ### A. PEFT (Parameter-Efficient Fine-Tuning) e varianti avanzate
 L'addestramento completo (*Full Fine-Tuning*) di tutti i parametri richiede un'enorme quantità di memoria GPU. Le tecniche PEFT congelano la maggior parte del modello base e addestrano solo un numero ridotto di parametri aggiuntivi.
 
-* **LoRA (Low-Rank Adaptation):** Inietta matrici di decomposizione di rango inferiore negli strati di attenzione del modello. Riduce i parametri addestrabili di oltre il 99%, mantenendo intatta la qualità del modello.
-* **QLoRA (Quantized LoRA):** Rappresenta lo standard di riferimento per il self-hosting. Il modello base viene caricato in una quantizzazione a 4-bit ad alta precisione (NF4), mentre i moduli LoRA rimangono a 16-bit. Questo permette di effettuare il fine-tuning di un modello da 8B o 14B parametri su una singola GPU consumer (es. RTX 3090/4090 con 24GB di VRAM).
-* **DoRA (Weight-Decomposed Low-Rank Adaptation):** Evoluzione di LoRA introdotta recentemente, che scompone i pesi del modello in componenti di magnitudo e direzione. DoRA ottimizza entrambe in modo indipendente, permettendo a LoRA di approssimare le performance del Full Fine-Tuning con la stessa efficienza computazionale.
+* **LoRA (Low-Rank Adaptation):** Inietta matrici di decomposizione di rango inferiore negli strati di attenzione del modello. È governata da parametri descritti in [[I 5 Iperparametri di Configurazione QLoRA|Iperparametri di Configurazione]].
+* **QLoRA (Quantized LoRA):** Rappresenta lo standard di riferimento per il self-hosting. Il modello base viene caricato in una quantizzazione a 4-bit ad alta precisione (NF4), mentre i moduli LoRA rimangono a 16-bit. Questo permette di effettuare il fine-tuning di un modello da 8B o 14B parametri su una singola GPU consumer (vedi [[Approfondimento Tecnico QLoRA]] e l'analisi su [[Approfondimento NF4 e Quantizzazione]]).
+* **DoRA (Weight-Decomposed Low-Rank Adaptation):** Evoluzione di LoRA introdotta recentemente, che scompone i pesi del modello in componenti di magnitudo e direzione. DoRA ottimizza entrambe in modo indipendente, permettendo a LoRA di approssimare le performance del Full Fine-Tuning con la stessa efficienza computazionale (vedi [[Approfondimento DoRA]]).
 
 ### B. Allineamento Avanzato e Post-Training (Sostituti di RLHF)
 L'apprendimento per rinforzo basato sui feedback umani (RLHF) del passato era complesso e instabile. Nel 2026 si utilizzano tecniche dirette:
 
-* **DPO (Direct Preference Optimization):** Elimina la necessità di addestrare un modello di ricompensa separato. DPO ottimizza il modello direttamente sui dati di preferenza (coppie di risposte `[Scelta Migliore, Scelta Peggiore]`) utilizzando una funzione di perdita binaria semplice ed elegante. È fondamentale per eliminare le allucinazioni e allineare lo stile del modello.
-* **ORPO (Odds Ratio Preference Optimization):** Integra la fase di Supervised Fine-Tuning (SFT) e l'allineamento delle preferenze in un unico step logico. Riduce drasticamente i tempi di calcolo e previene la degradazione delle performance del modello su compiti generici durante l'allineamento specialistico.
+* **DPO (Direct Preference Optimization):** Elimina la necessità di addestrare un modello di ricompensa separato. DPO ottimizza il modello direttamente sui dati di preferenza utilizzando una funzione di perdita binaria semplice ed elegante.
+* **ORPO (Odds Ratio Preference Optimization):** Integra la fase di Supervised Fine-Tuning (SFT) e l'allineamento delle preferenze in un unico step logico. Riduce drasticamente i tempi di calcolo e previene la degradazione delle performance del modello su compiti generici durante l'allineamento specialistico (vedi [[Approfondimento ORPO]]).
 
 ### C. Pipeline di Generazione Sintetica del Dataset
-La qualità del fine-tuning dipende interamente dalla qualità dei dati. Nel 2026, la metodologia standard prevede l'uso di modelli "Frontier" (es. tramite architetture di tipo *Judge* o modelli commerciali superiori) per generare, filtrare e validare sinteticamente migliaia di esempi di addestramento partendo da documentazione grezza o file di codice, garantendo una pulizia del dataset senza precedenti prima dell'addestramento locale.
+La qualità del fine-tuning dipende interamente dalla qualità dei dati. Nel 2026, la metodologia standard prevede l'uso di modelli "Frontier" (es. tramite architetture di tipo *Judge* o modelli commerciali superiori) per generare, filtrare e validare sinteticamente migliaia di esempi di addestramento partendo da documentazione grezza o file di codice, garantendo una pulizia del dataset senza precedenti prima dell'addestramento locale (descritta nel capitolo sull'SFT di [[I 4 Step Fondamentali di Training#2. Loss Calculation|Loss Calculation]]).
 
 ---
 
@@ -68,5 +68,5 @@ Per implementare queste metodologie nel 2026, lo stack tecnologico raccomandato 
 
 1. **Dataset Curation:** `Hugging Face Datasets` e script di parsing custom.
 2. **Training Engine:** `Axolotl` o `TRL (Transformer Reinforcement Learning)` integrati con `DeepSpeed` per la gestione della memoria.
-3. **Hardware Efficiency:** Abilitazione nativa di `FlashAttention-2` o `FlashAttention-3` per ottimizzare l'uso dei Tensor Core delle GPU e accelerare il calcolo dei meccanismi di attenzione.
+3. **Hardware Efficiency:** Abilitazione nativa di `FlashAttention-2` o `FlashAttention-3` per ottimizzare l'uso dei Tensor Core delle GPU e accelerare il calcolo dei meccanismi di attenzione (vedi [[Approfondimento FlashAttention]]).
 4. **Deployment:** Esportazione dei pesi finali (fusi con il modello base) in formato `GGUF` per inferenza locale CPU/GPU leggera, o `AWQ/EXL2` per server ad alte prestazioni (vLLM).

@@ -28,29 +28,29 @@ La memoria ad accesso casuale situata sulla scheda video (GPU). Nel fine-tuning,
 I "pesi" sono i coefficienti matematici (i valori numerici nelle matrici del modello) che determinano quanta importanza dare a una parola rispetto a un'altra all'interno del contesto. Fare fine-tuning significa aggiornare questi numeri per correggere l'output del modello.
 
 ### 4. Quantizzazione (Quantization)
-Una tecnica di compressione che riduce la precisione numerica dei pesi del modello (ad esempio passando da numeri a 16-bit a numeri a 4-bit). Questo permette di ridurre drasticamente lo spazio occupato in VRAM, consentendo a modelli massicci di essere eseguiti o addestrati su hardware consumer.
+Una tecnica di compressione che riduce la precisione numerica dei pesi del modello. Maggiori dettagli sulla quantizzazione NF4 e sulla doppia quantizzazione si trovano in [[Approfondimento NF4 e Quantizzazione]].
 
 ### 5. PEFT (Parameter-Efficient Fine-Tuning)
-Invece di aggiornare tutti i miliardi di parametri di un modello (operazione pesantissima), le metodologie PEFT mantengono congelati i pesi originali del modello e addestrano solo un piccolo gruppo di parametri aggiuntivi inseriti ad hoc.
+Invece di aggiornare tutti i parametri di un modello, le metodologie PEFT mantengono congelati i pesi originali e addestrano solo un piccolo gruppo aggiuntivo (vedi [[I 5 Iperparametri di Configurazione QLoRA|Iperparametri di Configurazione LoRA]]).
 
 ### 6. LoRA (Low-Rank Adaptation)
-La tecnica PEFT più famosa. Invece di modificare le enormi matrici di peso originali del modello, LoRA inserisce delle matrici parallele molto più piccole e "strette" (di rango inferiore, o *Low-Rank*) all'interno degli strati neurali. Solo queste matrici minori vengono addestrate, riducendo i tempi e l'uso di memoria.
+La tecnica PEFT più famosa. Inserisce delle matrici parallele a basso rango all'interno degli strati neurali, come descritto in [[Glossario e Concetti su QLoRA#6. Matrici di Rango Inferiore (Low-Rank Matrices / Adapters)|Matrici di Rango Inferiore]].
 
 ### 7. QLoRA (Quantized LoRA)
-Un'evoluzione che combina la **Quantizzazione** a 4-bit del modello base con l'aggiunta dei moduli **LoRA** a 16-bit. È la metodologia regina per chi fa auto-ospitalità (*self-hosting*), poiché permette di fare fine-tuning di modelli avanzati su una singola scheda video da 24GB di VRAM.
+Un'evoluzione che combina la quantizzazione a 4-bit del modello base con l'aggiunta di moduli LoRA a 16-bit. Per i dettagli vedi [[Approfondimento Tecnico QLoRA]].
 
 ### 8. DoRA (Weight-Decomposed Low-Rank Adaptation)
-Un'ottimizzazione di LoRA che separa matematicamente la magnitudo (l'intensità) e la direzione dei pesi durante l'addestramento. Questo permette alle matrici LoRA di aggiornarsi con una precisione quasi identica a un addestramento completo (Full Fine-Tuning), pur mantenendo l'efficienza millimetrica di LoRA.
+Un'ottimizzazione di LoRA che scompone matematicamente i pesi in magnitudo e direzione. Per un'analisi delle equazioni, vedi [[Approfondimento DoRA]].
 
 ### 9. SFT (Supervised Fine-Tuning / Instruction Tuning)
-Il processo di addestramento basato su esempi espliciti composti da una domanda (o istruzione) e dalla relativa risposta ideale fornita da un supervisore. Insegna al modello come comportarsi da vero e proprio assistente.
+Il processo di addestramento basato su esempi espliciti composti da una domanda (o istruzione) e dalla relativa risposta ideale (Ground Truth). Per vedere dove si inserisce nel flusso di training, vedi [[I 4 Step Fondamentali di Training#2. Loss Calculation]].
 
 ### 10. DPO e ORPO (Allineamento delle Preferenze)
-* **DPO (Direct Preference Optimization):** Una tecnica che insegna al modello cosa scegliere e cosa evitare mostrandogli coppie di risposte (una considerata "buona" e una "mancata/allucinata"). Semplifica i vecchi processi eliminando la necessità di modelli di ricompensa complessi.
-* **ORPO (Odds Ratio Preference Optimization):** Una metodologia avanzata che unisce la fase di SFT e quella di DPO in un unico step logico, ottimizzando i tempi di calcolo e impedendo al modello di dimenticare le sue capacità generali durante la specializzazione.
+* **DPO (Direct Preference Optimization):** Insegna al modello le preferenze umane tramite coppie di risposte (scelte/rifiutate).
+* **ORPO (Odds Ratio Preference Optimization):** Una metodologia avanzata che unisce SFT e allineamento delle preferenze in un unico step logico. Vedi [[Approfondimento ORPO]].
 
 ### 11. FlashAttention
-Un algoritmo che ottimizza il modo in che la GPU calcola il meccanismo di attenzione (il modo in cui il modello collega le parole all'interno di un lungo testo). Evita colli di bottiglia nella memoria della GPU, velocizzando i calcoli fino a 2-4 volte.
+Un algoritmo che ottimizza il calcolo dell'attenzione riducendo i colli di bottiglia di I/O della GPU. Per saperne di più sulle versioni 1, 2 e 3, consulta [[Approfondimento FlashAttention]].
 
 ### 12. GGUF / AWQ
 Formati di esportazione e compressione dei modelli finiti:

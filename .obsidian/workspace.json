@@ -11,10 +11,14 @@
             "id": "8e3360cec57d8be1",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "AI/QLoRA/Approfondimento NF4 e Quantizzazione.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Approfondimento NF4 e Quantizzazione"
             }
           }
         ]
@@ -108,11 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "AI/QLoRA/Approfondimento NF4 e Quantizzazione.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Approfondimento NF4 e Quantizzazione"
             }
           },
           {
@@ -150,12 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "AI/QLoRA/Approfondimento NF4 e Quantizzazione.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Approfondimento NF4 e Quantizzazione"
             }
           },
           {
@@ -263,6 +269,12 @@
   },
   "active": "8e3360cec57d8be1",
   "lastOpenFiles": [
+    "AI/QLoRA/Approfondimento FlashAttention.md",
+    "AI/QLoRA/Approfondimento ORPO.md",
+    "AI/QLoRA/Approfondimento DoRA.md",
+    "AI/QLoRA/Approfondimento NF4 e Quantizzazione.md",
+    "AI/QLoRA/I 5 Iperparametri di Training QLoRA.md",
+    "AI/QLoRA/I 5 Iperparametri di Configurazione QLoRA.md",
     "Analisi 1/Composizione ed Operazioni di una funzione.md",
     "Analisi 1/Studio di funzione.md",
     "AI/QLoRA/I 4 Step Fondamentali di Training.md",
@@ -289,16 +301,10 @@
     "Rust/Web/rust_web_services.md",
     "Rust/Core/rust_ownership_safety.md",
     "Rust/Core/rust_fondamenti.md",
-    "Rust/Core/rust_best_practices.md",
-    "Rust/index.md",
     "Rust/Web",
     "Rust/Tauri",
     "Rust/Core",
     "Rust",
-    "Librerie/CLI Markit Down.md",
-    "Librerie/Markit Down.md",
-    "Librerie/Library Markit Down.md",
-    "Flutter/Widgets/widget_principali.md",
     "Untitled.canvas"
   ]
 }
